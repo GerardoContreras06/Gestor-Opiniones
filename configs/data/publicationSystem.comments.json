@@ -1,0 +1,16 @@
+[{
+  "_id": {
+    "$oid": "67be8a8351cfe556760ea284"
+  },
+  "text": "Kinal en decadencia",
+  "status": false,
+  "publication": {
+    "$oid": "67be4cb5d7e62ee532b75511"
+  },
+  "createdAt": {
+    "$date": "2025-02-26T03:29:07.254Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-26T04:15:19.205Z"
+  }
+}]

@@ -1,0 +1,162 @@
+{
+	"info": {
+		"_postman_id": "5c4b1c61-103b-4b71-b2bc-76f546b29a00",
+		"name": "PUBLICATION",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "42631856"
+	},
+	"item": [
+		{
+			"name": "CREATE",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JlNDgzODI0NTY5ZGI2NjAyYzJlMWQiLCJpYXQiOjE3NDA1MjM2MTQsImV4cCI6MTc0MDUzMDgxNH0.y27AH9al4YZjzHwBgRpEtSnVkim0r6NpqheuwNgqFRY",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"Linkin Park\",\r\n  \"content\": \"Mi banda favorita x100mpre\",\r\n  \"category\": \"Informacion\",\r\n  \"username\": \"esantos\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/publicationSystem/v1/publications/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"publicationSystem",
+						"v1",
+						"publications",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LIST ALL",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/publicationSystem/v1/publications/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"publicationSystem",
+						"v1",
+						"publications",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LIST ONE",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JlNDgzODI0NTY5ZGI2NjAyYzJlMWQiLCJpYXQiOjE3NDA1MjM2MTQsImV4cCI6MTc0MDUzMDgxNH0.y27AH9al4YZjzHwBgRpEtSnVkim0r6NpqheuwNgqFRY",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/publicationSystem/v1/publications/67be488b24569db6602c2e22",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"publicationSystem",
+						"v1",
+						"publications",
+						"67be488b24569db6602c2e22"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JlNDgzODI0NTY5ZGI2NjAyYzJlMWQiLCJpYXQiOjE3NDA1MjM2MTQsImV4cCI6MTc0MDUzMDgxNH0.y27AH9al4YZjzHwBgRpEtSnVkim0r6NpqheuwNgqFRY",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"Hora de Aventura\",\r\n  \"content\": \"Caricatura de Cartoon Network\",\r\n  \"category\": \"Animacion\",\r\n  \"username\": \"gerardo\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/publicationSystem/v1/publications/67be488b24569db6602c2e22",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"publicationSystem",
+						"v1",
+						"publications",
+						"67be488b24569db6602c2e22"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JlNDgzODI0NTY5ZGI2NjAyYzJlMWQiLCJpYXQiOjE3NDA1MjM2MTQsImV4cCI6MTc0MDUzMDgxNH0.y27AH9al4YZjzHwBgRpEtSnVkim0r6NpqheuwNgqFRY",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/publicationSystem/v1/publications/67be488b24569db6602c2e22",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"publicationSystem",
+						"v1",
+						"publications",
+						"67be488b24569db6602c2e22"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

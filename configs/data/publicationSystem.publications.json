@@ -1,0 +1,36 @@
+[{
+  "_id": {
+    "$oid": "67be488b24569db6602c2e22"
+  },
+  "title": "Hora de Aventura",
+  "content": "Caricatura de Cartoon Network",
+  "status": false,
+  "category": "Animacion",
+  "user": {
+    "$oid": "67be466cb07ce119b91be391"
+  },
+  "createdAt": {
+    "$date": "2025-02-25T22:47:39.455Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-25T22:54:13.182Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67be4cb5d7e62ee532b75511"
+  },
+  "title": "Elmer Santos es el mejor profe",
+  "content": "Porque da más tiempo para enviar las tareas",
+  "status": true,
+  "category": "Informacion",
+  "user": {
+    "$oid": "67be4bef9435b49fa2cc97a0"
+  },
+  "createdAt": {
+    "$date": "2025-02-25T23:05:25.695Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-25T23:05:25.695Z"
+  }
+}]
